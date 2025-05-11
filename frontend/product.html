@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Светодиодная лампа 9W E27 - Магазин Лампочек</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css"> <!-- Подключаем стили товара -->
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="header__logo" aria-label="Логотип Магазина Лампочек">
+                <img src="images/logo.svg" alt="Магазин Лампочек">
+            </a>
+            <div class="header__user-actions">
+                <a href="cart.html" class="header__cart-link placeholder placeholder--icon" aria-label="Корзина">
+                     <!-- Корзина -->
+                </a>
+                <a href="#" class="header__user-profile placeholder placeholder--user" aria-label="Профиль пользователя">
+                    username
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content main-content--product">
+        <div class="container">
+
+            <nav class="breadcrumbs" aria-label="Хлебные крошки">
+                <ol class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="./index.html" class="breadcrumbs__link">Каталог</a>
+                    </li>
+                    {/* Можно добавить больше уровней, если нужно */}
+                    {/* 
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Светодиодные лампы</a>
+                    </li>
+                     */}
+                    <li class="breadcrumbs__item" aria-current="page">
+                        Светодиодная лампа 9W E27
+                    </li>
+                </ol>
+            </nav>
+
+            <!-- Обертка для галереи и деталей товара, переименована для соответствия CSS -->
+            <div class="product-main"> 
+
+                <section class="product-gallery" aria-label="Галерея изображений товара">
+                    <div class="product-gallery__main-image">
+                        <!-- Начальное изображение. Убедитесь, что путь к images/light.png верный -->
+                        <img src="images/light.png" alt="Светодиодная лампа 9W E27 - вид 1" id="main-product-image">
+                        <button class="product-gallery__arrow product-gallery__arrow--prev" aria-label="Предыдущее изображение" type="button"><</button>
+                        <button class="product-gallery__arrow product-gallery__arrow--next" aria-label="Следующее изображение" type="button">></button>
+                    </div>
+                    <div class="product-gallery__thumbnails">
+                        <button class="product-gallery__thumb active" aria-label="Показать изображение 1" type="button"
+                                data-image-src="images/light.png" data-image-alt="Светодиодная лампа 9W E27 - вид 1">
+                            <img src="images/light-thumb.png" alt="Миниатюра: Светодиодная лампа 9W E27 - вид 1">
+                        </button>
+                        <button class="product-gallery__thumb" aria-label="Показать изображение 2" type="button"
+                                data-image-src="images/light-angle.png" data-image-alt="Светодиодная лампа 9W E27 - вид 2 (под углом)">
+                             <img src="images/light-angle-thumb.png" alt="Миниатюра: Светодиодная лампа 9W E27 - вид 2">
+                        </button>
+                        <button class="product-gallery__thumb" aria-label="Показать изображение 3" type="button"
+                                data-image-src="images/light-box.png" data-image-alt="Светодиодная лампа 9W E27 - упаковка">
+                            <img src="images/light-box-thumb.png" alt="Миниатюра: Светодиодная лампа 9W E27 - упаковка">
+                        </button>
+                    </div>
+                </section>
+
+                <aside class="product-details">
+                     <h1 class="product-title">Светодиодная лампа 9W E27</h1>
+                     <div class="product-purchase-block">
+                        <p class="product-purchase-block__price">459 ₽</p>
+                        <div class="quantity-selector"> 
+                            <button type="button" class="quantity-selector__button quantity-selector__button--decrease" aria-label="Уменьшить количество">-</button>
+                            <input type="number" class="quantity-selector__input" value="1" min="1" max="99" aria-label="Количество товара" inputmode="numeric">
+                            <button type="button" class="quantity-selector__button quantity-selector__button--increase" aria-label="Увеличить количество">+</button>
+                        </div>
+                        <button type="submit" class="button product-purchase-block__button button--accent">Приобрести</button>
+                    </div>
+
+                    <div class="product-characteristics">
+                        <h2 class="product-characteristics__title">Характеристики:</h2>
+                        <ul class="product-characteristics__list">
+                             <li class="product-characteristics__item"><strong>Технология:</strong> Светодиодная</li>
+                            <li class="product-characteristics__item"><strong>Мощность:</strong> 9W</li>
+                            {/* ... другие характеристики ... */}
+                        </ul>
+                    </div>
+                </aside>
+
+            </div> 
+
+            <section class="product-description" aria-labelledby="product-description-title">
+                <h2 id="product-description-title" class="product-description__title">Описание товара</h2>
+                <p>Преобразите ваше пространство с помощью нашей светодиодной лампочки мощностью 9W с цоколем E27. Эта лампа идеально подходит для использования в домашних условиях, офисах и коммерческих помещениях. Благодаря современным технологиям, она обеспечивает яркий и равномерный свет, создавая комфортную атмосферу в любом интерьере.</p>
+                <h3>Преимущества:</h3>
+                <ul>
+                    <li><strong>Энергоэффективность:</strong> Снижает потребление электроэнергии до 80% по сравнению с традиционными лампами накаливания.</li>
+                    <li><strong>Долговечность:</strong> Срок службы до 25 000 часов, что позволяет сократить расходы на замену лампочек.</li>
+                    <li><strong>Экологичность:</strong> Не содержит ртути и других вредных веществ, безопасна для окружающей среды.</li>
+                    <li><strong>Мягкий свет:</strong> Цветовая температура 3000K создаёт теплую и уютную атмосферу, идеально подходящую для жилых помещений.</li>
+                </ul>
+                <h3>Применение:</h3>
+                <p>Подходит для освещения гостиных, спален, кухонь и офисов. Легко устанавливается в стандартные патроны E27.</p>
+                <h3>Почему выбирают нас?</h3>
+                <p>Мы гарантируем высокое качество и надежность нашей продукции. Каждая лампочка проходит строгий контроль качества, что обеспечивает долгий срок службы и отличные характеристики.</p>
+                <p>Закажите сейчас и освежите ваше пространство ярким и экономичным светом!</p>
+           </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <nav class="footer__nav" aria-label="Нижняя навигация">
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="/" class="footer__link">Главная</a></li>
+                    <li class="footer__item"><a href="cart.html" class="footer__link">Корзина</a></li>
+                    <li class="footer__item"><a href="/" class="footer__link">Каталог</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li> <!-- Заменить # на реальную ссылку -->
+                </ul>
+            </nav>
+             <!-- Можно добавить иконки соцсетей или доп. информацию -->
+             <div class="footer__social placeholder placeholder--medium" aria-label="Социальные сети">
+                 <!-- Заменить плейсхолдер на реальные иконки/ссылки -->
+             </div>
+            <p class="footer__copyright">(C) 2024-2025, Магазин Лампочек</p>
+    
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

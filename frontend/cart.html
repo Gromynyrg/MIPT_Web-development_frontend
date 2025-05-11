@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина - Магазин Лампочек</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css"> <!-- Подключаем стили корзины -->
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="header__logo" aria-label="Логотип Магазина Лампочек">
+                <img src="images/logo.svg" alt="Магазин Лампочек">
+            </a>
+            <div class="header__user-actions">
+                <a href="cart.html" class="header__cart-link placeholder placeholder--icon" aria-label="Корзина">
+                     <!-- Корзина -->
+                </a>
+                <a href="#" class="header__user-profile placeholder placeholder--user" aria-label="Профиль пользователя">
+                    username
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <h1 class="cart-page-title">Корзина</h1>
+
+            <section class="cart-section" aria-labelledby="cart-section-title-h2">
+                <h2 id="cart-section-title-h2" class="cart-section__title">Товары в корзине</h2>
+
+                <div class="cart-actions-bar">
+                    <label>
+                        <input type="checkbox" id="select-all-items" checked>
+                        Выбрать всё
+                    </label>
+                </div>
+
+                <ul class="cart-items-list">
+                    <!-- Пример товара в корзине. В реальном приложении будет генерироваться динамически -->
+                    <li class="cart-item" data-item-id="1">
+                        <input type="checkbox" class="cart-item__checkbox" aria-label="Выбрать Лампочка светодиодная 9W E27" checked>
+                        <div class="cart-item__details">
+                            <span class="cart-item__name">Лампочка светодиодная 9W E27</span>
+                            <span class="cart-item__price-per-unit" data-price-per-unit="459">459 ₽ / шт.</span>
+                        </div>
+                        <div class="cart-item__quantity quantity-selector">
+                            <button type="button" class="quantity-selector__button quantity-selector__button--decrease" aria-label="Уменьшить количество">-</button>
+                            <input type="number" class="quantity-selector__input" value="3" min="1" max="99" aria-label="Количество">
+                            <button type="button" class="quantity-selector__button quantity-selector__button--increase" aria-label="Увеличить количество">+</button>
+                        </div>
+                        <span class="cart-item__subtotal">1 377 ₽</span>
+                        <button type="button" class="cart-item__remove-button" aria-label="Удалить Лампочка светодиодная 9W E27 из корзины">×</button>
+                    </li>
+
+                    <li class="cart-item" data-item-id="2">
+                        <input type="checkbox" class="cart-item__checkbox" aria-label="Выбрать Лампочка светодиодная 8W E27">
+                        <div class="cart-item__details">
+                            <span class="cart-item__name">Лампочка светодиодная 8W E27</span>
+                            <span class="cart-item__price-per-unit" data-price-per-unit="859">859 ₽ / шт.</span>
+                        </div>
+                        <div class="cart-item__quantity quantity-selector">
+                            <button type="button" class="quantity-selector__button quantity-selector__button--decrease">-</button>
+                            <input type="number" class="quantity-selector__input" value="8" min="1" max="99" aria-label="Количество">
+                            <button type="button" class="quantity-selector__button quantity-selector__button--increase">+</button>
+                        </div>
+                        <span class="cart-item__subtotal">6 872 ₽</span>
+                         <button type="button" class="cart-item__remove-button" aria-label="Удалить Лампочка светодиодная 8W E27 из корзины">×</button>
+                    </li>
+                     <li class="cart-item" data-item-id="3">
+                        <input type="checkbox" class="cart-item__checkbox" aria-label="Выбрать Лампочка светодиодная 13W E27" checked>
+                        <div class="cart-item__details">
+                            <span class="cart-item__name">Лампочка светодиодная 13W E27</span>
+                            <span class="cart-item__price-per-unit" data-price-per-unit="616">616 ₽ / шт.</span>
+                        </div>
+                        <div class="cart-item__quantity quantity-selector">
+                            <button type="button" class="quantity-selector__button quantity-selector__button--decrease">-</button>
+                            <input type="number" class="quantity-selector__input" value="9" min="1" max="99" aria-label="Количество">
+                            <button type="button" class="quantity-selector__button quantity-selector__button--increase">+</button>
+                        </div>
+                        <span class="cart-item__subtotal">5 544 ₽</span>
+                         <button type="button" class="cart-item__remove-button" aria-label="Удалить Лампочка светодиодная 13W E27 из корзины">×</button>
+                    </li>
+                     <li class="cart-item" data-item-id="4">
+                        <input type="checkbox" class="cart-item__checkbox" aria-label="Выбрать Лампочка светодиодная 4W E14" checked>
+                        <div class="cart-item__details">
+                            <span class="cart-item__name">Лампочка светодиодная 4W E14</span>
+                            <span class="cart-item__price-per-unit" data-price-per-unit="659">659 ₽ / шт.</span>
+                        </div>
+                        <div class="cart-item__quantity quantity-selector">
+                            <button type="button" class="quantity-selector__button quantity-selector__button--decrease">-</button>
+                            <input type="number" class="quantity-selector__input" value="10" min="1" max="99" aria-label="Количество">
+                            <button type="button" class="quantity-selector__button quantity-selector__button--increase">+</button>
+                        </div>
+                        <span class="cart-item__subtotal">6 590 ₽</span>
+                        <button type="button" class="cart-item__remove-button" aria-label="Удалить Лампочка светодиодная 4W E14 из корзины">×</button>
+                    </li>
+                     <li class="cart-item" data-item-id="5">
+                        <input type="checkbox" class="cart-item__checkbox" aria-label="Выбрать Лампочка светодиодная 3W E14" checked>
+                        <div class="cart-item__details">
+                            <span class="cart-item__name">Лампочка светодиодная 3W E14</span>
+                            <span class="cart-item__price-per-unit" data-price-per-unit="369">369 ₽ / шт.</span>
+                        </div>
+                        <div class="cart-item__quantity quantity-selector">
+                            <button type="button" class="quantity-selector__button quantity-selector__button--decrease">-</button>
+                            <input type="number" class="quantity-selector__input" value="5" min="1" max="99" aria-label="Количество">
+                            <button type="button" class="quantity-selector__button quantity-selector__button--increase">+</button>
+                        </div>
+                        <span class="cart-item__subtotal">1 845 ₽</span>
+                        <button type="button" class="cart-item__remove-button" aria-label="Удалить Лампочка светодиодная 3W E14 из корзины">×</button>
+                    </li>
+                </ul>
+
+                <div class="cart-summary">
+                    <a href="checkout.html" class="button button--accent cart-summary__checkout-button">Оформить заказ</a>
+                    <div class="cart-summary__total">
+                        <span>Итого:</span>
+                        <span id="cart-total-price">15 356 ₽</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <nav class="footer__nav" aria-label="Нижняя навигация">
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="/" class="footer__link">Главная</a></li>
+                    <li class="footer__item"><a href="cart.html" class="footer__link">Корзина</a></li>
+                    <li class="footer__item"><a href="index.html" class="footer__link">Каталог</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+                </ul>
+            </nav>
+             <div class="footer__social placeholder placeholder--medium" aria-label="Социальные сети"></div>
+            <p class="footer__copyright">(C) 2024-2025, Магазин Лампочек</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

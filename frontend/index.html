@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница - Магазин Лампочек</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="header__logo" aria-label="Логотип Магазина Лампочек">
+                <img src="images/logo.svg" alt="Магазин Лампочек">
+            </a>
+            <div class="header__user-actions">
+                <a href="cart.html" class="header__cart-link placeholder placeholder--icon" aria-label="Корзина">
+                     <!-- Корзина -->
+                </a>
+                <a href="#" class="header__user-profile placeholder placeholder--user" aria-label="Профиль пользователя">
+                    username
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container main-content__container">
+            <h1 class="visually-hidden">Каталог лампочек</h1>
+
+            <aside class="sidebar">
+                <h2 class="sidebar__title">Лампы</h2>
+                <nav aria-labelledby="filter-title">
+                     <h3 id="filter-title" class="visually-hidden">Фильтры каталога</h3>
+                     <ul class="sidebar__filter-list">
+                        <li class="sidebar__filter-item"><a href="?filter=led" class="sidebar__filter-link">Светодиодные</a></li>
+                        <li class="sidebar__filter-item"><a href="?filter=incandescent" class="sidebar__filter-link">Накаливания</a></li>
+                        {/* ... другие фильтры ... */}
+                    </ul>
+                </nav>
+            </aside>
+
+            <section class="catalog" aria-labelledby="catalog-title">
+                 <h2 id="catalog-title" class="visually-hidden">Товары</h2>
+                 <div class="product-grid">
+                    <!-- Карточка товара 1 -->
+                    <article class="product-card">
+                        <a href="product.html" class="product-card__link">
+                            <div class="product-card__image">
+                                <img src="https://placehold.co/250x250/e9ecef/adb5bd?text=LUX+E27" alt="Лампочка LUX E27 3000K">
+                            </div>
+                            <h3 class="product-card__title">LUX E27 3000K</h3>
+                        </a>
+                        <div class="product-card__footer">
+                             <p class="product-card__price">479 ₽</p>
+                             <button type="button" class="button product-card__button">В корзину</button>
+                        </div>
+                    </article>
+
+                    <!-- Карточка товара 2 -->
+                    <article class="product-card">
+                        <a href="product.html" class="product-card__link">
+                             <div class="product-card__image">
+                                 <img src="https://placehold.co/250x250/e9ecef/adb5bd?text=EcoLight" alt="Лампочка EcoLight E14 2700K">
+                             </div>
+                            <h3 class="product-card__title">EcoLight E14 2700K</h3>
+                        </a>
+                        <div class="product-card__footer">
+                             <p class="product-card__price">649 ₽</p>
+                             <button type="button" class="button product-card__button">В корзину</button>
+                        </div>
+                    </article>
+
+                    <!-- Карточка товара 3 -->
+                    <article class="product-card">
+                         <a href="product.html" class="product-card__link">
+                            <div class="product-card__image">
+                                <img src="https://placehold.co/250x250/e9ecef/adb5bd?text=BrightStar" alt="Лампочка BrightStar E27 4000K">
+                            </div>
+                            <h3 class="product-card__title">BrightStar E27 4000K</h3>
+                        </a>
+                         <div class="product-card__footer">
+                            <p class="product-card__price">789 ₽</p>
+                            <button type="button" class="button product-card__button">В корзину</button>
+                        </div>
+                    </article>
+                    
+                    <!-- Пример еще одной карточки -->
+                    <article class="product-card">
+                        <a href="product.html" class="product-card__link">
+                            <div class="product-card__image">
+                                <img src="https://placehold.co/250x250/e9ecef/adb5bd?text=HomeLight" alt="HomeLight E27 3000K">
+                            </div>
+                            <h3 class="product-card__title">HomeLight E27 3000K</h3>
+                        </a>
+                        <div class="product-card__footer">
+                            <p class="product-card__price">950 ₽</p>
+                            <button type="button" class="button product-card__button">В корзину</button>
+                        </div>
+                    </article>
+                </div>
+
+                <button type="button" class="button button--secondary load-more-button">Загрузить ещё</button>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <nav class="footer__nav" aria-label="Нижняя навигация">
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="index.html" class="footer__link">Главная</a></li>
+                    <li class="footer__item"><a href="cart.html" class="footer__link">Корзина</a></li>
+                    <li class="footer__item"><a href="index.html" class="footer__link">Каталог</a></li>
+                    <li class="footer__item"><a href="contacts.html" class="footer__link">Контакты</a></li>
+                </ul>
+            </nav>
+             <div class="footer__social placeholder placeholder--medium" aria-label="Социальные сети">
+             </div>
+            <p class="footer__copyright">(C) 2024-2025, Магазин Лампочек</p>
+    
+        </div>
+    </footer>
+</body>
+</html>
